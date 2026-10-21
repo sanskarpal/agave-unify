@@ -1,0 +1,8 @@
+node_modules
+dist
+.vercel
+.DS_Store
+*.local
+# private research, outreach drafts and interview prep; never publish
+.forge/
+.claude/
