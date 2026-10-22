@@ -1,5 +1,5 @@
-import { normalizeCommitmentNumber } from './adapters/buildbooks'
-import type { Commitment, Invoice, UnifiedDataset } from './types'
+import { normalizeCommitmentNumber } from './adapters/buildbooks.js'
+import type { Commitment, Invoice, UnifiedDataset } from './types.js'
 
 export type MatchMethod = 'linked' | 'memo' | 'vendor-cost-code' | 'ambiguous' | 'unmatched'
 

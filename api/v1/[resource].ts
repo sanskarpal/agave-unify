@@ -1,7 +1,7 @@
 // Vercel function: GET /api/v1/{projects|cost-codes|commitments|invoices}?source=ledgerone&...
 // Thin wrapper; all behavior lives in src/lib/api.ts and is unit tested there.
-import { SOURCES } from '../../src/data/datasets'
-import { handle } from '../../src/lib/api'
+import { SOURCES } from '../../src/data/datasets.js'
+import { handle } from '../../src/lib/api.js'
 
 export function GET(request: Request): Response {
   const url = new URL(request.url)

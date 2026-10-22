@@ -3,8 +3,8 @@
 // description in one field, money is display text, dates are MM/DD/YYYY,
 // PO numbers lose their prefix, and bills never link to a commitment: the
 // reference, if any, is typed into the memo.
-import { parseMoney } from '../money'
-import type { AdapterWarning, Commitment, CostCode, Invoice, Project, UnifiedDataset } from '../types'
+import { parseMoney } from '../money.js'
+import type { AdapterWarning, Commitment, CostCode, Invoice, Project, UnifiedDataset } from '../types.js'
 
 export interface BuildBooksExport {
   Customers: { FullName: string; JobNumber: string; JobStatus: 'In progress' | 'Closed' }[]

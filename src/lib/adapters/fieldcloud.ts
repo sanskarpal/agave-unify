@@ -1,8 +1,8 @@
 // FieldCloud: a (fictional) cloud project-management API. Nested camelCase
 // JSON, opaque ids, money as float dollars, budgets as original + approved
 // changes, and payables that usually (not always) point at their commitment.
-import { parseMoney } from '../money'
-import type { AdapterWarning, Commitment, CostCode, Invoice, Project, UnifiedDataset } from '../types'
+import { parseMoney } from '../money.js'
+import type { AdapterWarning, Commitment, CostCode, Invoice, Project, UnifiedDataset } from '../types.js'
 
 export interface FieldCloudExport {
   projects: {

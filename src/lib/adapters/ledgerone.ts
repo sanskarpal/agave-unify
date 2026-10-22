@@ -1,8 +1,8 @@
 // LedgerOne: a (fictional) on-prem accounting system read over SQL. Upper-case
 // columns, budgets split by phase *and* cost category, dates as YYYYMMDD,
 // invoice amounts in integer cents, and subcontracts (not POs) linked on the bill.
-import { parseMoney } from '../money'
-import type { AdapterWarning, CostCode, UnifiedDataset } from '../types'
+import { parseMoney } from '../money.js'
+import type { AdapterWarning, CostCode, UnifiedDataset } from '../types.js'
 
 export interface LedgerOneExport {
   JCJOB: { JOB_NO: string; JOB_DESC: string; CUST_NAME: string; STATUS: 'A' | 'C' }[]

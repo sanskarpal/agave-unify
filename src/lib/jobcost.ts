@@ -1,4 +1,4 @@
-import type { UnifiedDataset } from './types'
+import type { UnifiedDataset } from './types.js'
 
 export interface CostCodeSummary {
   projectNumber: string

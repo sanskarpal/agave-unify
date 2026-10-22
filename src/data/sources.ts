@@ -1,9 +1,9 @@
 // Simulated exports: the canonical books re-expressed in each system's native
 // shape and quirks, standing in for what an integration would actually pull.
-import type { BuildBooksExport } from '../lib/adapters/buildbooks'
-import type { FieldCloudExport } from '../lib/adapters/fieldcloud'
-import type { LedgerOneExport } from '../lib/adapters/ledgerone'
-import { COMMITMENTS, INVOICES, PROJECTS } from './canonical'
+import type { BuildBooksExport } from '../lib/adapters/buildbooks.js'
+import type { FieldCloudExport } from '../lib/adapters/fieldcloud.js'
+import type { LedgerOneExport } from '../lib/adapters/ledgerone.js'
+import { COMMITMENTS, INVOICES, PROJECTS } from './canonical.js'
 
 const money = (dollars: number) =>
   `$${dollars.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`

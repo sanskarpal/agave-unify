@@ -1,8 +1,8 @@
-import { adaptBuildBooks } from '../lib/adapters/buildbooks'
-import { adaptFieldCloud } from '../lib/adapters/fieldcloud'
-import { adaptLedgerOne } from '../lib/adapters/ledgerone'
-import type { SourceId, UnifiedDataset } from '../lib/types'
-import { buildBooksExport, fieldCloudExport, ledgerOneExport } from './sources'
+import { adaptBuildBooks } from '../lib/adapters/buildbooks.js'
+import { adaptFieldCloud } from '../lib/adapters/fieldcloud.js'
+import { adaptLedgerOne } from '../lib/adapters/ledgerone.js'
+import type { SourceId, UnifiedDataset } from '../lib/types.js'
+import { buildBooksExport, fieldCloudExport, ledgerOneExport } from './sources.js'
 
 export interface SourceInfo {
   id: SourceId

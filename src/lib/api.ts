@@ -1,7 +1,7 @@
 // The unified API, written as a plain Request → Response handler so the same
 // code runs as a Vercel function (api/v1/[resource].ts) and in the browser's
 // API explorer.
-import type { UnifiedDataset } from './types'
+import type { UnifiedDataset } from './types.js'
 
 export const RESOURCES = ['projects', 'cost-codes', 'commitments', 'invoices'] as const
 export type Resource = (typeof RESOURCES)[number]
