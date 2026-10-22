@@ -13,6 +13,11 @@ describe('GET /api/v1/[resource]', () => {
     expect(body.next_cursor).toEqual(expect.any(String))
   })
 
+  it('ignores the route param Vercel copies into the query string', async () => {
+    const res = call('/api/v1/invoices?resource=invoices&source=fieldcloud&limit=1')
+    expect(res.status).toBe(200)
+  })
+
   it('rejects an unknown source', async () => {
     const res = call('/api/v1/projects?source=excel')
     expect(res.status).toBe(400)

@@ -9,6 +9,7 @@ export function GET(request: Request): Response {
   const params = new URLSearchParams(url.searchParams)
   const sourceId = params.get('source') ?? 'fieldcloud'
   params.delete('source')
+  params.delete('resource') // Vercel adds the dynamic [resource] segment to the query string
 
   const src = SOURCES.find((s) => s.id === sourceId)
   if (!src) {
