@@ -2,7 +2,7 @@
 
 One contractor's books, exported by three very different construction systems, normalized into one job-cost model and one paginated API. An unofficial prototype for Agave, built by Sanskar Pal while applying for the Software Engineer role.
 
-**Live demo:** _coming soon_ · **Stack:** React 19, TypeScript, Tailwind v4, Vitest, Vercel Functions
+**Live demo:** [agave-unify.vercel.app](https://agave-unify.vercel.app) · **Stack:** React 19, TypeScript, Tailwind v4, Vitest, Vercel Functions
 
 ![Unify screenshot](docs/screenshot.png)
 
@@ -27,7 +27,7 @@ Agave's [engineering posting](https://jobs.ashbyhq.com/agave/986e328a-7d38-4092-
 - [src/lib/api.ts](src/lib/api.ts): the request handler; [api/v1/[resource].ts](api/v1/[resource].ts) is a thin Vercel wrapper around it.
 - [src/data/](src/data): the canonical books, and simulated exports that re-express them in each system's shape.
 
-22 tests (`npm test`): every adapter maps every record with no warnings, all three produce identical job-cost fingerprints, each matching path, ambiguity, over-billing, the money/date parsers, cursor paging, filter validation and the function wrapper.
+23 tests (`npm test`): every adapter maps every record with no warnings, all three produce identical job-cost fingerprints, each matching path, ambiguity, over-billing, the money/date parsers, cursor paging, filter validation and the function wrapper.
 
 ## Tradeoffs and what I'd do next
 
